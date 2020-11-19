@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body id="body-kurs">
+    <center><h1 id="h1-kurs">KURS RUPIAH</h1></center>
+    <div id="card-kurs">
+	<center><br/>
+		<table id="tableKurs" border="1">
+			<tr>
+				<td id="td-kurs">Masukan Nilai</td>
+				<td id="td-kurs">Value</td>
+				<td id="td-kurs">Nilai Rupiah</td>
+			</tr>
+			<tr>
+				<td><center><input onkeyup="kurs()" style="width: 90%" placeholder="Masukan Nilai" type="text" name="nilai" id="nilai"></center></td>
+				<td>
+				<center><select onchange="kurs()" id="kurs" style="width: 90%" >
+					<option value="0">Ubah Kurs</option>
+					<option value="1">Dollar US</option>
+					<option value="2">Dollar Singapore</option>
+					<option value="3">Ringgit Malaysia</option>
+					<option value="4">Yen Jepang</option>
+					<option value="5">Euro</option>
+					<option value="6">Riyal Arab Saudi</option>
+				</select></center></td>
+				<td><center><input type="text" disabled="" id="rupiah" placeholder="Nilai Rupiah" style="width: 90%" name="rupiah"></center></td>
+			</tr>
+		</table>
+    </center>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

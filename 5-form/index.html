@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>validasi</title>
+  </head>
+  <body id="body-success">
+    <div id="card-validasi">
+      <div id="card-content">
+        <div id="card-title">
+          <h2>FORM VALIDASI</h2>
+          <div class="underline-title"></div>
+          <br />
+        </div>
+        <br />
+        <form method="post" onSubmit="validasi()" class="form">
+          <label for="user-email" style="padding-top: 13px">&nbsp;Nama</label>
+          <input
+            id="nama"
+            class="form-content"
+            type="text"
+            name="nama"
+            maxlength="30"
+            placeholder="Isikan nama Anda"
+          />
+          <div class="form-border"></div>
+          <label for="user-password" style="padding-top: 22px"
+            >&nbsp;Email</label
+          >
+          <input
+            id="email"
+            class="form-content"
+            type="email"
+            name="email"
+            placeholder="Isikan email Anda"
+          />
+          <div class="form-border"></div>
+          <label for="user-password" style="padding-top: 22px"
+            >&nbsp;Jam Keberangkatan</label
+          >
+          <input
+            id="jam"
+            class="form-content"
+            type="time"
+            placeholder="Isikan jam berangkatan Anda"
+            name="jam"
+          />
+          <div class="form-border"></div>
+          <label for="user-password" style="padding-top: 22px"
+            >&nbsp;Tujuan Keberangkatan</label
+          >
+          <input
+            id="tujuan"
+            class="form-content"
+            type="text"
+            name="tujuan"
+            placeholder="Isikan tujuan keberangkatan Anda"
+          />
+          <div class="form-border"></div>
+          <label for="user-password" style="padding-top: 22px"
+            >&nbsp;Jumlah Tiket</label
+          >
+          <input
+            id="jmlTiket"
+            class="form-content"
+            type="number"
+            name="jmlTiket"
+            placeholder="Isikan jumlah keberangkatan Anda"
+            min="1"
+            max="10"
+          />
+          <div class="form-border"></div>
+          <br /><br />
+          <center>
+            <button type="submit" id="submit-btn" name="submit">SUBMIT</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
